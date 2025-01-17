@@ -1,0 +1,17 @@
+<odoo>
+    <record id="view_mrp_production_form_inherit" model="ir.ui.view">
+        <field name="name">mrp.production.form.inherit</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            <header>
+                <button name="open_stock_quant_wizard"
+                        type="object"
+                        string="Ubicaciones">
+                    <i class="fa fa-map-marker" role="img" title="Ubicaciones"/>
+                    Ubicaciones
+                </button>
+            </header>
+        </field>
+    </record>
+</odoo>
