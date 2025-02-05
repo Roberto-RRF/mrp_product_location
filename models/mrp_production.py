@@ -13,6 +13,6 @@ class MrpProduction(models.Model):
             'target': 'new',  # Opens in a popup window
             'context': {
                 'default_move_raw_ids': self.move_raw_ids.ids,  # Passing only the ids of move_raw_ids
-                'default_location_src_id':self.location_src_id.id
+                'default_location_src_id':self.location_dest_id.id
             },
         }
